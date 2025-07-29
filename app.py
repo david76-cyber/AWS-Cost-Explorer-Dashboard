@@ -1,4 +1,4 @@
-  GNU nano 7.2                                                                                          app.py                                                                                                   import boto3
+import boto3
 import os
 from botocore.exceptions import NoCredentialsError, ClientError
 from flask import Flask, render_template, request
