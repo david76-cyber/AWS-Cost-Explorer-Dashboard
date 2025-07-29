@@ -1,17 +1,19 @@
 # AWS-Cost-Explorer-Dashboard
 
-<h2>Description</h2>
-A simple Flask-based web dashboard that visualizes your AWS service costs using the Cost Explorer API. Hosted on an EC2 instance and secured using IAM roles.
+<h2>Overview</h2>
+A web application built with Flask that interacts with AWS Cost Explorer API to fetch, display, and visualize your AWS cost and usage data. This tool helps users monitor and analyze their cloud expenses over customizable date ranges.
 <br />
 
 
 <h2>## 🚀 Features</h2>
 
-- <b>Query AWS Cost Explorer for daily or monthly usage</b> 
-- <b>Select custom date ranges (UTC or HST aligned)</b>
-- <b>Break down costs by AWS service</b>
-- <b>Deployed on EC2 with auto-starting Flask app</b>
-- <b>IAM Role-based secure access (no hardcoded credentials)</b>
+- <b>Retrieve detailed AWS cost data by service and date range</b> 
+- <b>Filter costs by time period with user input (start and end dates)</b>
+- <b>Group costs by AWS service dimension</b>
+- <b>Display costs in a clean, tabular format with total cost summary</b>
+- <b>Supports daily granularity of usage and cost data</b>
+- <b>Simple and intuitive web interface</b>
+- <b>Error handling and informative messages on API call failures</b>
 
 
 <h2>Tech Stack</h2>
@@ -21,14 +23,14 @@ A simple Flask-based web dashboard that visualizes your AWS service costs using 
 - <b>**EC2** (Ubuntu host)</b>
 - <b>**IAM Role** (for secure API access)</b>
 
-<h2>Environment Setup</h2>
+<h2>Setup Instructions</h2>
 
-- <b>Virtual Machines: Created in VirtualBox</b>
-- <b>Network: Internal/Host-only adapter for isolated communication</b>
-- <b>Domain: `david.com`</b>
-- <b>DNS and AD DS installed on Windows Server 2022</b>
+- <b>AWS Account with Cost Explorer enabled</b>
+- <b>AWS credentials configured locally (~/.aws/credentials) with permissions for Cost Explorer (ce:GetCostAndUsage)</b>
+- <b>Python 3 installed</b>
+- <b>Pip package manager</b>
 
-<h2>Group Policy Configuration Samples</h2>
+<h2></h2>
 
 - <b>Enforce Password Policy: Strong domain password rules</b>
 - <b>Disable USB Storage: Prevent use of removable media</b>
@@ -37,43 +39,12 @@ A simple Flask-based web dashboard that visualizes your AWS service costs using 
 <h2>Screenshots</h2>
 
 <p align="center">
- Active Directory Diagram: <br/>
- <img src="https://i.imgur.com/9xb6W00.png" height="80%" width="80%" alt="Diagram"/>
+ AWS Cost_Explorer: <br/>
+ <img src="https://i.imgur.com/zKSOXCV.png" height="80%" width="80%" alt="Cost"/>
  <br />
  <br />
- VirtualBox Layout:  <br/>
-<img src="https://i.imgur.com/kU1XprL.png" height="80%" width="80%" alt="DC & Client"/>
+ IAM Role:  <br/>
+<img src="https://i.imgur.com/qVovDKL.png" height="80%" width="80%" alt="JSON"/>
  <br />
  <br />
-AD DS, DHCP, DNS Installed: <br/>
-<img src="https://i.imgur.com/yYGSV70.png" height="80%" width="80%" alt="Active Directory Domain Services (AD DS), DHCP, DNS"/>
-<br />
-<br />
- New Forest Configuration:  <br/>
-<img src="https://i.imgur.com/nqU1hcS.png" height="80%" width="80%"  alt="Domain name: david.com"/>
-<br />
-<br />
 
-<h2>PowerShell Automation</h2>
-
-Create_User Script: <br/>
-<img src="https://i.imgur.com/GpF8b8t.png" height="80%" width="80%" alt="PowerShell script"/>
-<br />
-<br />
-Delete_user:  <br/>
-<img src="https://i.imgur.com/WkPRIgw.png" height="80%" width="80%" alt="PowerShell script"/>
-<br />
-<br />
-
-<h2>Group Policy Configuration Samples</h2>
-Enforce Password Policy: Strong domain password rules:  <br/>
-<img src="https://i.imgur.com/YMNGUY6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Disable USB Storage: Prevent use of removable media:  <br/>
-<img src="https://i.imgur.com/SXzeZfS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Force Wallpaper: Enforce a company-wide desktop background:  <br/>
-<img src="https://i.imgur.com/4TesfRu.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
