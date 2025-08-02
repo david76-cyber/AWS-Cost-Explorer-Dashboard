@@ -55,12 +55,12 @@ pip install -r requirements.txt
 You can use ~/.aws/credentials
 
 Or, create a .env file with:
-
 ini
 Copy
 Edit
 AWS_ACCESS_KEY_ID=your-access-key
 AWS_SECRET_ACCESS_KEY=your-secret-key
+
 AWS_REGION=us-west-2
 🧪 4. Run the App Locally
 bash
@@ -69,14 +69,4 @@ Edit
 python app.py
 Navigate to http://localhost:5000 in your browser.
 
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Action": "ce:GetCostAndUsage",
-      "Resource": "*"
-    }
-  ]
-}
 
