@@ -69,6 +69,17 @@ Edit
 python app.py
 Navigate to http://localhost:5000 in your browser.
 
-📸 Screenshots
+<h2>📸 Screenshots</h2>
+
+<p align="center">
+ IAM Roles: <br/>
+ <img src="https://i.imgur.com/R4Tz4uW.png" height="80%" width="80%" alt="Roles"/>
+ <br />
+ <br />
+ AWS Cost_Explorer:  <br/>
+<img src="https://i.imgur.com/YuLevRk.png" height="80%" width="80%" alt="DC & Client"/>
+ <br />
+ <br />
+Cost_Explorer: <br/>
 
 
