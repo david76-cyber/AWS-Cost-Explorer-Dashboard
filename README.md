@@ -1,50 +1,49 @@
-# AWS-Cost-Explorer-Dashboard
+# 💸 AWS Cost Explorer Dashboard
 
-<h2>Overview</h2>
-A web application built with Flask that interacts with AWS Cost Explorer API to fetch, display, and visualize your AWS cost and usage data. This tool helps users monitor and analyze their cloud expenses over customizable date ranges.
-<br />
+A Flask-based web app that integrates with the **AWS Cost Explorer API** to help users track and visualize their AWS cloud spending. It supports custom date ranges, filters by service, and displays data in a user-friendly tabular format.
 
+---
 
-<h2>## 🚀 Features</h2>
+## 🚀 Features
 
-- <b>Retrieve detailed AWS cost data by service and date range</b> 
-- <b>Filter costs by time period with user input (start and end dates)</b>
-- <b>Group costs by AWS service dimension</b>
-- <b>Display costs in a clean, tabular format with total cost summary</b>
-- <b>Supports daily granularity of usage and cost data</b>
-- <b>Simple and intuitive web interface</b>
-- <b>Error handling and informative messages on API call failures</b>
+- 🔍 Retrieve detailed AWS cost data by service and custom date range
+- 📅 Filter usage by **start** and **end** dates with daily granularity
+- 📊 Group costs by **AWS service dimension**
+- 📋 Clean tabular display of results with **total cost summary**
+- 💡 Error handling with informative messages on API failures
+- 🌐 Simple and intuitive browser interface
 
+---
 
-<h2>Tech Stack</h2>
+## ⚙️ Tech Stack
 
-- <b>**Flask** (Python web framework)</b>
-- <b>**boto3** (AWS SDK for Python)</b>
-- <b>**EC2** (Ubuntu host)</b>
-- <b>**IAM Role** (for secure API access)</b>
+| Component     | Tech Used                        |
+|---------------|----------------------------------|
+| Backend       | Python, Flask                    |
+| Cloud Hosting | AWS EC2 (Ubuntu)                 |
+| API           | AWS Cost Explorer (via Boto3)    |
+| Auth          | IAM Role with scoped permissions |
+| UI            | HTML, Bootstrap (optional)       |
 
-<h2>Setup Instructions</h2>
+---
 
-- <b>AWS Account with Cost Explorer enabled</b>
-- <b>AWS credentials configured locally (~/.aws/credentials) with permissions for Cost Explorer (ce:GetCostAndUsage)</b>
-- <b>Python 3 installed</b>
-- <b>Pip package manager</b>
+## 🧰 Prerequisites
 
-<h2></h2>
+Before running the app, make sure you have:
 
-- <b>Enforce Password Policy: Strong domain password rules</b>
-- <b>Disable USB Storage: Prevent use of removable media</b>
-- <b>Force Wallpaper: Enforce a company-wide desktop background</b>
+- ✅ AWS Account with **Cost Explorer** enabled
+- ✅ IAM user or role with `ce:GetCostAndUsage` permission
+- ✅ Python 3.x and `pip` installed
+- ✅ AWS credentials configured locally at `~/.aws/credentials`  
+  *(or use environment variables if deploying to EC2)*
 
-<h2>Screenshots</h2>
+---
 
-<p align="center">
- AWS Cost_Explorer: <br/>
- <img src="https://i.imgur.com/zKSOXCV.png" height="80%" width="80%" alt="Cost"/>
- <br />
- <br />
- IAM Role:  <br/>
-<img src="https://i.imgur.com/qVovDKL.png" height="80%" width="80%" alt="JSON"/>
- <br />
- <br />
+## 🛠️ Setup Instructions
 
+### 🔧 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/aws-cost-explorer-dashboard.git
+cd aws-cost-explorer-dashboard
+2. Install Dependencies
