@@ -70,5 +70,6 @@ python app.py
 Navigate to http://localhost:5000 in your browser.
 
 
-![Dashboard](https://github.com/david76-cyber/AWS-Cost-Explorer-Dashboard/blob/main/IAM.png?raw=true)
+![Dashboard](https://github.com/david76-cyber/AWS-Cost-Explorer-Dashboard/raw/main/screenshots/IAM.png)
+
 ![Dashboard](
