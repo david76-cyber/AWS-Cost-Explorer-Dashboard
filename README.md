@@ -69,4 +69,6 @@ Edit
 python app.py
 Navigate to http://localhost:5000 in your browser.
 
+📸 Screenshots
+
 
