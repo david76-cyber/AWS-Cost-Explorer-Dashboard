@@ -69,6 +69,5 @@ Edit
 python app.py
 Navigate to http://localhost:5000 in your browser.
 
-<img width="1201" height="703" alt="IAM" src="https://github.com/user-attachments/assets/f4e6ca5d-d2f5-4c03-95c2-f3a8f55c6af9" />
+<img width="1433" height="791" alt="image" src="https://github.com/user-attachments/assets/f784e812-f2ec-4df9-8a23-a9b9f7e301e7" />
 
-<img width="1433" height="791" alt="AWS cost_explorer" src="https://github.com/user-attachments/assets/1f90ca28-c2e4-409f-9d6f-631039ad49cd" />
