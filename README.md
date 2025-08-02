@@ -46,4 +46,37 @@ Before running the app, make sure you have:
 ```bash
 git clone https://github.com/yourusername/aws-cost-explorer-dashboard.git
 cd aws-cost-explorer-dashboard
-2. Install Dependencies
+📦 2. Install Dependencies
+bash
+Copy
+Edit
+pip install -r requirements.txt
+🔐 3. Set Up AWS Credentials
+You can use ~/.aws/credentials
+
+Or, create a .env file with:
+
+ini
+Copy
+Edit
+AWS_ACCESS_KEY_ID=your-access-key
+AWS_SECRET_ACCESS_KEY=your-secret-key
+AWS_REGION=us-west-2
+🧪 4. Run the App Locally
+bash
+Copy
+Edit
+python app.py
+Navigate to http://localhost:5000 in your browser.
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "ce:GetCostAndUsage",
+      "Resource": "*"
+    }
+  ]
+}
+
